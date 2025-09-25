@@ -1,0 +1,43 @@
+{
+  "name": "zap-regtest",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "detector": "tsx src/detector.ts",
+    "deposits:status": "tsx src/deposits-status.ts",
+    "wallet:claim-tx": "tsx src/claim-tx.ts",
+    "wallet:claim-static": "tsx src/claim-static.ts",
+    "wallet:unused-addrs": "tsx src/unused-deposit-addrs.ts",
+    "debug:claim": "tsx src/debug-claim.ts",
+    "debug:claim-static": "tsx src/debug-claim-static.ts",
+    "scan:deposits": "tsx src/scan-deposits.ts",
+    "debug:auto-claim": "tsx src/debug-auto-claim.ts",
+    "wallet:init": "tsx src/wallet.ts init",
+    "wallet:address": "tsx src/wallet.ts address",
+    "wallet:addr": "tsx src/wallet.ts address",
+    "wallet:balance": "tsx src/wallet.ts balance",
+    "wallet:watch-claim": "tsx src/wallet.ts watch-claim",
+    "wallet:watch-deposits": "tsx src/watch-deposits.ts",
+    "list:pools": "tsx src/list-pools.ts",
+    "get:swaps": "tsx src/get-pool-swaps.ts",
+    "snipe:watch": "tsx src/snipe-watch.ts",
+    "create:test-pool": "tsx src/create-test-pool.ts"
+  },
+  "dependencies": {
+    "@buildonspark/issuer-sdk": "^0.0.100",
+    "@buildonspark/spark-sdk": "^0.3.7",
+    "@flashnet/sdk": "^0.3.30",
+    "bip39": "^3.1.0",
+    "chalk": "^5.6.0",
+    "dotenv": "^17.2.1",
+    "node-fetch": "^3.3.2",
+    "bech32": "^2.0.0",
+    "p-limit": "^7.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "zap",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "cli": "node ./scripts/tui.mjs",
+    "deps:check": "node ./scripts/update-deps.mjs check",
+    "deps:update": "node ./scripts/update-deps.mjs update"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {
+    "enquirer": "^2.4.1"
+  }
+}
